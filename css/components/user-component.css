@@ -77,3 +77,20 @@
 .user-component__chat{
     margin-bottom: 30px;
 }
+
+@keyframes beatChat{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.user-component__chat:hover{
+    will-change: tansform;
+    animation: beatChat 1s ease-in-out;
+}
