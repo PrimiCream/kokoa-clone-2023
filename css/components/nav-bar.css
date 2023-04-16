@@ -35,6 +35,12 @@
     animation: notificationAnimation 2s ease-in-out infinite;
 }
 
+.nav__notification__side{
+    position: absolute;
+    left: 30px;
+}
+
+
 @keyframes appearBtnAnimation{
     from{
         opacity: 0;

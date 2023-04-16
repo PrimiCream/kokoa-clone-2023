@@ -11,15 +11,15 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fa-solid fa-wifi" style="color: #000000"></i>
+        <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>23:43</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fa-solid fa-battery-full fa-lg" style="color: #000000"></i>
-        <i class="fa-solid fa-bolt" style="color: #000000"></i>
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt""></i>
       </div>
     </div>
 
@@ -35,19 +35,51 @@
 
     <main class="main-screen">
       <a href="chat.html">
-        <div class="user-component">
+        <div class="user-component user-component__chat">
           <div class="user-component__column">
             <img src="css/img/muumi.jpg" / class="user-component__avatar
             user-component__avatar">
             <div class="user-component__text">
-              <h4 class="user-component__title">Nicolas</h4>
+              <h4 class="user-component__title">Mummi</h4>
               <h6 class="user-component__subtitle">
                 Please check My Kakao Account Info
               </h6>
             </div>
           </div>
           <div class="user-component__column">
-            <span class="user-component__time">21:22</span>
+            <span class="user-component__time">11:22</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+      <a href="chat.html" class="user-component__chat">
+        <div class="user-component user-component__chat">
+          <div class="user-component__column">
+            <img src="css/img/little-my.png" / class="user-component__avatar
+            user-component__avatar">
+            <div class="user-component__text">
+              <h4 class="user-component__title">Little My</h4>
+              <h6 class="user-component__subtitle">hey!</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">22:22</span>
+            <div class="badge">5</div>
+          </div>
+        </div>
+      </a>
+      <a href="chat.html">
+        <div class="user-component user-component__chat">
+          <div class="user-component__column">
+            <img src="css/img/snufkin.png" / class="user-component__avatar
+            user-component__avatar">
+            <div class="user-component__text">
+              <h4 class="user-component__title">Snufkin</h4>
+              <h6 class="user-component__subtitle">Please give me pipe</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">23:05</span>
             <div class="badge">1</div>
           </div>
         </div>
@@ -63,7 +95,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification badge">7</span>
             <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
@@ -74,6 +106,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
+            <span class="badge-small nav__notification__side"></span>
             <i class="fa-solid fa-ellipsis fa-2x"></i>
           </a>
         </li>
