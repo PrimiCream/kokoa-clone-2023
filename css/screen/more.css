@@ -13,7 +13,10 @@
 }
 
 .more-suggestions__icons{
-    display: flex;    
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .more-suggestions__icon{
@@ -26,15 +29,38 @@
 .more-suggestions__icon-image{
     width: 60px;
     height: 60px;
-    background-color: var(--yellow);
+    background-color: grey;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    animation: turnImg 2s linear;
 }
 
 .more-suggestions__icon-image i {
     font-size: 32px;
     color: white;
+}
+
+@keyframes turnImg{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes turnBird{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.turn__bird:hover{
+    animation: turnBird 2s linear infinite;
 }
