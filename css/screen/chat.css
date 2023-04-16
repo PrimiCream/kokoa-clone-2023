@@ -33,7 +33,7 @@
 }
 
 .main-chat{
-    margin-top: 180px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,6 +101,13 @@
 
 .message-row--own .message__info{
     flex-direction: row-reverse;
+}
+
+.message__checker{
+    font-size: 10px;
+    font-weight: 900;
+    margin-left: 10px;
+    color: var(--yellow);
 }
 
 .reply{
