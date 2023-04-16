@@ -8,34 +8,40 @@
     <title>Welcome to Kokoa Talk</title>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fa-solid fa-wifi"></i>
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+          <span>100%</span>
+          <i class="fa-solid fa-battery-full fa-lg"></i>
+          <i class="fa-solid fa-bolt"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fa-solid fa-battery-full fa-lg"></i>
-        <i class="fa-solid fa-bolt"></i>
-      </div>
+
+      <header class="welcome-header">
+        <img src="css/img/little-game.png" />
+        <h1 class="welcome-header__title">Welcome to Moomin World</h1>
+        <p class="welcome-header__text">
+          If you have a Moomin World Account,<br> log in with your email or phone number.
+        </p>
+      </header>
+
+      <form action="friends.html" method="get" id="login-form">
+        <input
+          name="username"
+          type="text"
+          placeholder="Email or phone number"
+        />
+        <input name="password" type="password" placeholder="Password" />
+        <input type="submit" value="Log in" />
+        <a href="#">Find your password</a>
+      </form>
     </div>
-
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Kokoa Accont, log in with your email or phone number.
-      </p>
-    </header>
-
-    <form action="friends.html" method="get" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log in" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
 
     <div id="no-mobile">
       <i class="fa-solid fa-forward"></i>
